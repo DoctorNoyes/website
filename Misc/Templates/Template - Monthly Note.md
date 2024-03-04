@@ -1,5 +1,0 @@
----
-class:
-  - Monthly-Note
-active:
----
