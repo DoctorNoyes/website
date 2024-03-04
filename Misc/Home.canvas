@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"324d0cf706b5f74a","type":"text","text":"#### Papers - To Do\n```dataview\nTABLE project as \"Project\"\nFROM \"02 Products/2 Papers\"\nWHERE contains(status, \"To Do\")\n```\n#### Papers - In Progress\n```dataview\nTABLE project as \"Project\"\nFROM #product/paper \nWHERE contains(status, \"In Progress\")\n```\n#### Completed Papers\n```dataview\nTABLE project as \"Project\"\nFROM #product/paper \nWHERE contains(status, \"Done\")\n```","x":-1280,"y":350,"width":640,"height":450},
+		{"id":"4a92241b7cc28086","type":"text","text":"#### Research Projects\n```dataview\nTABLE \nFROM #project/research \nWHERE active = true\nSORT file.name asc\n```\n","x":-1280,"y":-180,"width":640,"height":530},
+		{"id":"6a9b67bf18ad97d4","type":"text","text":"### Monthly Tasks\n```dataview \nTASK \nFROM \"00 Journal/003 Monthly\" \nWHERE !completed\nGROUP BY file.name\n```\n","x":-1660,"y":-180,"width":380,"height":980},
+		{"id":"6283f3f207d22e5b","type":"text","text":"## Courses\n```dataview\nTABLE \n\tchoice(active = true, \"🟢\", \"⚪\") as Active\nFROM #project/course \nSORT file.name \n```\n","x":-640,"y":-180,"width":1000,"height":305},
+		{"id":"e8431cdadbfe96ad","type":"text","text":"#### Presentation - To Do\n```dataview\nTABLE project as \"Project\"\nFROM #product/presentation \nWHERE contains(status, \"To Do\")\n```\n#### Presentation - In Progress\n```dataview\nTABLE project as \"Project\"\nFROM #product/presentation \nWHERE contains(status, \"In Progress\")\n```\n#### Completed Presentation\n```dataview\nTABLE project as \"Project\"\nFROM #product/presentation \nWHERE contains(status, \"Done\")\n```","x":-1280,"y":800,"width":640,"height":440},
+		{"id":"0393110ccbe4f2df","type":"text","text":"### Weekly Goals\n```dataview \nTASK \nFROM \"00 Journal/002 Weekly\" \nWHERE !completed\nGROUP by file.name\n```\n","x":-1660,"y":800,"width":380,"height":440},
+		{"id":"a2d868dea3232b79","type":"text","text":"#### Teaching - To Do\n```dataview\nTABLE project as \"Course\"\nFROM #project/course  OR #product/lecture  OR #product/assignment OR #product/lesson-plan \nWHERE contains(status, \"To Do\")\nSORT file.name\n```\n#### Teaching - In Progress\n```dataview\nTABLE project as \"Course\"\nFROM #project/course  OR #product/lecture  OR #product/assignment OR #product/lesson-plan \nWHERE contains(status, \"In Progress\")\nSORT file.name\n```\n","x":-640,"y":125,"width":1000,"height":675},
+		{"id":"604747a0d1f7d838","type":"file","file":"Misc/Dashboard - Habits.md","x":-640,"y":800,"width":1000,"height":440}
+	],
+	"edges":[]
+}
